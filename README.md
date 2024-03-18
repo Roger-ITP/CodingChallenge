@@ -1,12 +1,18 @@
-# Architecture
+# Introduction
+
+This application was created for the coding challenge described in ``doc\Code Assessment.pdf``.
+
+## Architecture
 
 The application is composed of WPF frontend and a REST-API as the backend. The FakeLocationProvider is created to produce locations. 
 
 The data is stored in a temporal table in sql server. With this approach the historical data could be played back.
 
-# Data 
+An grapfical overview is found in ``doc\Architecture.drawio``.
 
-## Producer
+## Data 
+
+### Producer
 
 The FakeLocationProvider produces and sends 140B per soldier position. Example:
 
@@ -24,7 +30,8 @@ The FakeLocationProvider produces and sends 140B per soldier position. Example:
 ```
 With 600 soldiers, that makes is around 82kB (per iteration).
 
-## Consumer
+### Consumer
 
-The WPF frontend polls the backend 2x per second. So for 600 soldiers, 164kB are fetched per second and client.
+The WPF frontend polls the backend 2x per second. So for 600 soldiers, 164kB are fetched per second and client. 
+The client may be started multiple times.
 

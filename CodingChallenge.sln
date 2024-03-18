@@ -19,9 +19,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{CC6BD905-9238-4D14-A513-1A5B5312DB9E}"
 	ProjectSection(SolutionItems) = preProject
 		Doc\Architecture.drawio = Doc\Architecture.drawio
+		Doc\Code Assessment.pdf = Doc\Code Assessment.pdf
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveSim.Wpf.Simple", "LiveSim.Wpf.Simple\LiveSim.Wpf.Simple.csproj", "{09E5C91D-607A-44CE-91BB-A2DC22B8517F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveSim.Wpf.Simple", "LiveSim.Wpf.Simple\LiveSim.Wpf.Simple.csproj", "{09E5C91D-607A-44CE-91BB-A2DC22B8517F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeLocationProvider", "FakeLocationProvider\FakeLocationProvider.csproj", "{DB4DC2A8-7C97-474E-9338-C015DDB204EE}"
 EndProject
