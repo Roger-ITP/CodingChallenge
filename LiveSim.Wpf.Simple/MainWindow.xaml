@@ -1,0 +1,24 @@
+﻿<Window x:Class="LiveSim.Wpf.Simple.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiveSim.Wpf.Simple"
+        mc:Ignorable="d"  Closing="Window_Closing"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox ItemsSource="{Binding Locations}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Id}" Margin="0 0 10 0"></TextBlock>
+                        <TextBlock Text="{Binding Type}" Margin="0 0 10 0"></TextBlock>
+                        <TextBlock Text="{Binding CreatedAt, StringFormat=dd-MM-yyyy HH:mm:ss.fff}" Margin="0 0 10 0"></TextBlock>
+                        <TextBlock Text="{Binding Location.Latitude}" Margin="0 0 10 0"></TextBlock>
+                        <TextBlock Text="{Binding Location.Longitude}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
