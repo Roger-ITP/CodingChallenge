@@ -1,0 +1,39 @@
+@LiveSim.Api_HostAddress = https://localhost:7205
+
+### Add new location
+POST {{LiveSim.Api_HostAddress}}/api/entitylocation
+Content-Type: application/json
+
+{
+  "id": 99999,
+  "type": 1,
+  "location": {
+    "latitude": 49.94319,
+    "longitude": 7.44446
+  },
+  "createdAt": "2024-03-18T09:41:59.893Z",
+  "trainingId": 12345
+}
+
+### Add existing location (update) 
+POST {{LiveSim.Api_HostAddress}}/api/entitylocation
+Content-Type: application/json
+
+{
+  "id": 99999,
+  "type": 1,
+  "location": {
+    "latitude": 49.94319,
+    "longitude": 7.44446
+  },
+  "createdAt": "2024-03-18T11:00:00.000Z",
+  "trainingId": 12345
+}
+
+###
+
+### Get 
+GET {{LiveSim.Api_HostAddress}}/api/entitylocation
+
+###
+
