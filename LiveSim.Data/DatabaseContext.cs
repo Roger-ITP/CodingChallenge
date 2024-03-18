@@ -13,7 +13,7 @@ namespace LiveSim.Data
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
             // don't use in production (as it would be called by each db context)
-            this.Database.Migrate();
+            // this.Database.Migrate();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

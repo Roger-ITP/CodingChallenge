@@ -7,23 +7,23 @@ namespace LiveSim.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EntityLocationController : ControllerBase
+    public class EntityLocationsController : ControllerBase
     {
         private readonly IEntityLocationRepository repository;
 
-        public EntityLocationController(IEntityLocationRepository repository)
+        public EntityLocationsController(IEntityLocationRepository repository)
         {
             this.repository = repository;
         }
 
-        // GET: api/EntityLocation>
+        // GET: api/EntityLocations>
         [HttpGet]
         public async Task<IEnumerable<EntityLocation>> Get(int? trainingId, DateTime? atTimestamp, CancellationToken cancellationToken)
         {
             return await repository.GetByFilterAsync(trainingId, atTimestamp, cancellationToken);
         }
 
-        // POST api/EntityLocation
+        // POST api/EntityLocations
         [HttpPost]
         public async Task Post([FromBody] EntityLocation entityLocation)
         {
