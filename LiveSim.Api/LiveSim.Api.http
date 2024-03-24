@@ -1,7 +1,7 @@
 @LiveSim.Api_HostAddress = https://localhost:7205
 
 ### Add new location
-POST {{LiveSim.Api_HostAddress}}/api/entitylocation
+POST {{LiveSim.Api_HostAddress}}/api/entitylocations
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ### Add existing location (update) 
-POST {{LiveSim.Api_HostAddress}}/api/entitylocation
+POST {{LiveSim.Api_HostAddress}}/api/entitylocations
 Content-Type: application/json
 
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 ###
 
 ### Get 
-GET {{LiveSim.Api_HostAddress}}/api/entitylocation
+GET {{LiveSim.Api_HostAddress}}/api/entitylocations
 
 ###
 

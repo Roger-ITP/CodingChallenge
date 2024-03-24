@@ -35,3 +35,6 @@ With 600 soldiers, that makes is around 82kB (per iteration).
 The WPF frontend polls the backend 2x per second. So for 600 soldiers, 164kB are fetched per second and client. 
 The client may be started multiple times.
 
+## Tests
+
+``LiveSim.Api.http`` contains some functional tests.

@@ -1,67 +1,76 @@
-<mxfile host="Electron" modified="2024-03-18T08:52:06.895Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="7UcEITRDhU6oqdtllL6H" version="23.0.2" type="device">
+<mxfile host="Electron" modified="2024-03-24T18:09:17.764Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ulfDgj5Mii_nVQ1FmTXM" version="23.0.2" type="device">
   <diagram name="Page-1" id="IC72AENNQ5sUzPGYxp-L">
-    <mxGraphModel dx="1418" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2954" dy="1204" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-15" value="REST-API" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="630" y="470" width="380" height="200" as="geometry" />
+        <mxCell id="DQUvHTPyKi_NLOAsoHAg-1" value="REST-API" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="620" y="470" width="380" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-2" value="LiveSim.Api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="500" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-3" value="LiveSim.Wpf" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-3" value="LiveSim.Wpf" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NfTT7p1alg2ybYDbAV9B-3" target="NfTT7p1alg2ybYDbAV9B-2">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NfTT7p1alg2ybYDbAV9B-3" target="DQUvHTPyKi_NLOAsoHAg-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="800" y="450" as="sourcePoint" />
-            <mxPoint x="850" y="400" as="targetPoint" />
+            <mxPoint x="740" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-5" value="polling" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NfTT7p1alg2ybYDbAV9B-4">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-5" value="GET (polling)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NfTT7p1alg2ybYDbAV9B-4" vertex="1" connectable="0">
           <mxGeometry x="-0.0167" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NfTT7p1alg2ybYDbAV9B-2" target="NfTT7p1alg2ybYDbAV9B-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-8" value="LiveSim.Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="585" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-10" value="LiveSim.Core" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="550" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="NfTT7p1alg2ybYDbAV9B-2" target="NfTT7p1alg2ybYDbAV9B-10">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="800" y="550" as="sourcePoint" />
-            <mxPoint x="845" y="570" as="targetPoint" />
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="560" as="sourcePoint" />
+            <mxPoint x="740" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="NfTT7p1alg2ybYDbAV9B-8" target="NfTT7p1alg2ybYDbAV9B-10">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;dashed=1;" parent="1" source="DQUvHTPyKi_NLOAsoHAg-2" target="DQUvHTPyKi_NLOAsoHAg-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="810" y="540" as="sourcePoint" />
-            <mxPoint x="860" y="575" as="targetPoint" />
+            <mxPoint x="800" y="530" as="sourcePoint" />
+            <mxPoint x="850" y="565" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-13" value="LiveSimDb" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;dashed=1;" parent="1" source="DQUvHTPyKi_NLOAsoHAg-4" target="DQUvHTPyKi_NLOAsoHAg-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="615" as="sourcePoint" />
+            <mxPoint x="850" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-13" value="LiveSimDb" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="690" y="760" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NfTT7p1alg2ybYDbAV9B-8" target="NfTT7p1alg2ybYDbAV9B-13">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DQUvHTPyKi_NLOAsoHAg-4" target="NfTT7p1alg2ybYDbAV9B-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="800" y="550" as="sourcePoint" />
+            <mxPoint x="740" y="645" as="sourcePoint" />
             <mxPoint x="850" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-16" value="FakeLocationProvider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="500" width="120" height="60" as="geometry" />
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-16" value="FakeLocationProvider" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NfTT7p1alg2ybYDbAV9B-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NfTT7p1alg2ybYDbAV9B-16" target="NfTT7p1alg2ybYDbAV9B-2">
+        <mxCell id="NfTT7p1alg2ybYDbAV9B-17" value="POST" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" parent="1" source="NfTT7p1alg2ybYDbAV9B-16" target="DQUvHTPyKi_NLOAsoHAg-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="810" y="540" as="sourcePoint" />
-            <mxPoint x="860" y="575" as="targetPoint" />
+            <mxPoint x="680" y="530" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="XGBu7HPpoUE8fCtAtus9-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DQUvHTPyKi_NLOAsoHAg-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="560" as="sourcePoint" />
+            <mxPoint x="740" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DQUvHTPyKi_NLOAsoHAg-2" value="LiveSim.Api" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="505" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DQUvHTPyKi_NLOAsoHAg-3" value="LiveSim.Core" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="547" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DQUvHTPyKi_NLOAsoHAg-4" value="LiveSim.Data" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="585" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
